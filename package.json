@@ -7,6 +7,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "dotenv": "^16.1.4",
     "express": "^4.18.2",
     "twilio": "^4.11.2"
   }

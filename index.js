@@ -1,11 +1,9 @@
+require("dotenv").config();
 const express = require("express");
 const twilio = require("twilio");
 
 const app = express();
-const client = twilio(
-	"AC4d91d8f9028f9922730801c1cfbbd8cd",
-	"c552cd34075eca9f7225eb37f7485bce"
-);
+const client = twilio(process.env.TWILIO_SID, process.env.TWILIO_TOKEN);
 app.use(express.json()); // Add this middleware to parse request body as JSON
 
 app.post("/send-sms", (req, res) => {
