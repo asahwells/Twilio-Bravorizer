@@ -1,0 +1,13 @@
+{
+  "name": "Twilio-Bravorizer",
+  "version": "1.0.0",
+  "description": "Twilio sending of sms",
+  "main": "index.js",
+  "author": "Asahwells",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.18.2",
+    "twilio": "^4.11.2"
+  }
+}
